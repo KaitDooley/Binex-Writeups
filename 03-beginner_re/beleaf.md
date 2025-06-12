@@ -9,10 +9,10 @@
 
 
 ## Solution:
-'''
+```
 $ ./beleaf
 Enter the flag
 >>> flag{we_beleaf_in_your_re_future}
 Correct!
-'''
+```
 
