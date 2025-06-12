@@ -4,9 +4,9 @@ Disassemble binary in ghidra and analyze functions. Notice the array that is ini
 
 
 ## Solution
-'''
+```
 $ ./rev              
 Welcome to the Salty Spitoon™, How tough are ya?
 flag{HuCf_lAb}
 Right this way...
-'''
+```
