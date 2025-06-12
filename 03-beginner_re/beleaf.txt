@@ -1,0 +1,4 @@
+Solution:
+
+1. ghidra and make c look readable
+2. use variable for goal and decode using looking (2 unnamed variables)
