@@ -2,8 +2,8 @@ from pwn import *
 
 p = process('./pwn1')
 
-p.sendline("Sir Lancelot of Camelot")
-p.sendline("To seek the Holy Grail.")
+p.sendline(b"Sir Lancelot of Camelot")
+p.sendline(b"To seek the Holy Grail.")
 
 goal = 0xdea110c8
 
