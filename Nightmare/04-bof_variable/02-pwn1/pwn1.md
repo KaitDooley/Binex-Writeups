@@ -3,7 +3,7 @@
 ## Steps:
 1. Open in ghidra and analyze
 	- Notice the first 2 questions have specific strings required as answers
-    ```
+ ```
   puts("What... is your name?");
   fgets(input,0x2b,_stdin);
   iVar1 = strcmp(input,"Sir Lancelot of Camelot\n"); # First Input
@@ -20,9 +20,9 @@
                     /* WARNING: Subroutine does not return */
     exit(0);
   }
-    ```
-    - Notice another input captured with `gets`, which is a function commonly used for exploits
-    ```
+```
+Notice another input captured with `gets`, which is a function commonly used for exploits
+```
   puts("What... is my secret?");
   gets(input);
   if (secret == -0x215eef38) {
@@ -31,9 +31,10 @@
   else {
     puts("I don\'t know that! Auuuuuuuugh!");
   }
-    ```
+```
+
 2. Look at the stack variable layout
-    ```
+```
                              **************************************************************
                              *                          FUNCTION                          *
                              **************************************************************
@@ -54,10 +55,12 @@
                                                                                           _start:000105e6(*), 00010ab8, 
                                                                                           00010b4c(*), 00011ff8(*)  
 
-    ```
+```
 input is at `Stack[-0x43]` and the variable we want to change (renamed to 'secret') is at `Stack[-0x18]`.
 `0x43 - 0x18 = 0x2b` which is 43 bytes in decimal. Since we can write any number of bytes to input, we can access and change 'secret'
+
 3. Create a payload overwriting the 43 bytes from 'input' to 'secret' and set 'secret = dea110c8`
+
 4. Send payloads to process
 
 ## Solution:
