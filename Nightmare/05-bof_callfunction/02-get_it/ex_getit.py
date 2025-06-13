@@ -1,6 +1,6 @@
 from pwn import *
 
-p = process('./warmup')
+p = process('./get_it')
 gdb.attach(p, gdbscript='b *main')
 
 addr = 0x4005b6
