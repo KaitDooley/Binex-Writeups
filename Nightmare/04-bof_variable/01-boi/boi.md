@@ -2,6 +2,7 @@
 
 ## Steps:
 1. Notice an input is entered with a limit of `0x28` (`40`), which will likely be used for a buffer overflow. There is a second variable that, if equal to `0xcaf3baee` runs `run_cmd("/bin/bash")`
+
 2. Look at the stack variable layout
 ```
                              **************************************************************
@@ -25,7 +26,9 @@
 ```
 input is at `Stack[-0x38]` and the variable we want to change (renamed 'goal') is at `Stack[-0x24]`.
 `0x38 - 0x24 = 0x14' which is 20 bytes in decimal. Since we can write 40 bytes, we can access and change 'goal'
+
 3. Create a payload overwriting the 20 bytes from 'input' to 'goal' and set `goal = 0xcaf3baee`
+
 4. Send payload to process
 
 
