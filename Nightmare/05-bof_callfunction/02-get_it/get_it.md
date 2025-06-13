@@ -1,8 +1,7 @@
 # Get_it Writeup
 
 ## Important Note
-THIS DOES NOT WORK
-The system call is no longer functional, step through in gdb to ensure give_shell is called but a shell will not be opened
+THIS DOES NOT WORK. The system call is no longer functional, step through in gdb to ensure give_shell is called but a shell will not be opened
 
 ## Steps
 1. Same process as warmup, just a different stack variable layout and the address of the function we want to call is not given
