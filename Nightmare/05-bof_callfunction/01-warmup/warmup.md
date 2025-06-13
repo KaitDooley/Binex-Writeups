@@ -1,8 +1,7 @@
 # Warmup Writeup
 
 ## Important Note
-THIS DOES NOT WORK
-The system call is no longer functional, step through in gdb to ensure easy is called but flag.txt will not actually print
+THIS DOES NOT WORK. The system call is no longer functional, step through in gdb to ensure easy is called but flag.txt will not actually print
 
 ## Steps
 1. Run `./warmup`, notice the address does not change
@@ -27,7 +26,7 @@ WOW:0x40060d
                                                                                           _start:0040053d(*), 0040077c, 
                                                                                           00400830(*)  
 ```
-input is at `Stack[-0x48], which is 72 in decimal.
+input is at `Stack[-0x48]`, which is 72 in decimal.
 Since input is read through `gets`, we can access and change the reurn pointer to the `easy` function to print the flag
 ```
 void easy(void)
