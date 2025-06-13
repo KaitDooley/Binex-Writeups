@@ -11,7 +11,8 @@
   puts(out);
 
 ```
-    - Instead, notice flag.txt is read into a global variable at 0x0804a080. So we will replace out with that so the flag is printed with `puts`
+Instead, notice flag.txt is read into a global variable at 0x0804a080. So we will replace out with that so the flag is printed with `puts`
+
 2. Look at the stack variable layout
 
 ```
@@ -38,7 +39,9 @@
 ```
 input is at `Stack[-0x28]` and the variable we want to change (renamed 'out') is at `Stack[-0x14]`
 `0x28 - 0x14 = 0x14` which is 20 bytes in decimal. Since we can write `0x20` (`32`) bytes to input, we can access and change `out`
+
 3. Create a payload overwriting the 20 bytes from 'input' to 'out' and set `out = 0x0804a080`
+
 4. Send payload to process
 
 
