@@ -7,7 +7,7 @@ $ cat input1.txt | grep -Eo "^[0-9]{5}[^/n]" | sort -n > col1.txt
 $ cat input1.txt | grep -Eo " [0-9]{5}" | grep -Eo "[0-9]{5}" | sort -n > col2.txt
 ```
 
-2. Copy columns into google sheets and get the sum of the absolute values of the differences.
+2. Process in python using solve.py (see code)
 
 
 ## Solution:
