@@ -5,6 +5,7 @@
 * Binex-tuts
 * dist
 * Some picoCTF challenges
+* Some Advent of Code challenges
 ## Other Resources to Explore
 * https://ironforgecyber.com/
 * https://cyber.coleellis.com/
