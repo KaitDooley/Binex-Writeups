@@ -19,8 +19,7 @@ You failed to modify the target variable...
 Maybe you didn't supply enough input? Try again!
 ```
 
-2. Determine the distance to the target variable.
-    `0x69e8 - 0x69d0 = 24`
+2. Determine the distance to the target variable ~ 3 sets of 8 bytes = `24` bytes
 3. Create the payload ~ 24 bytes of garbage to reach target variable
 ```
 from pwn import *
