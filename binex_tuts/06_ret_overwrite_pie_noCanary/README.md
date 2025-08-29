@@ -1,7 +1,7 @@
 # 06_ret_overwrite_pie_noCanary Writeup
 
 ## Steps:
-1. Run chall. Notice in this one PIE is enabled. This means that thememory locations are not fixed
+1. Run chall. Notice in this one PIE is enabled. This means that the memory locations are not fixed.
 ```
 $ ./chall 
 
