@@ -54,8 +54,10 @@ This means that the input we provide is converted from a string into a long inte
 Thus, we cannot simply write the hex values; they must be strings that can be converted into decimal values equivalent to the hex values.
 
 4. Write the payloads.
-   1 -  `0xdeadc0de` converted to an `int` then `str`
-   2 - address in hex converted to an `int` then `str`
+   
+   what -  `0xdeadc0de` converted to an `int` then `str`
+   
+   where - address in hex converted to an `int` then `str`
 ```
 from pwn import *
 
