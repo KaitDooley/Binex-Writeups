@@ -49,6 +49,7 @@ void ret2win(void)
 
 ```
 2. Determine the distance to the return. `0x28` means we need `40 bytes` of garbage to reach the return pointer
+> Information provided in instructions: It's worth confirming this before each challenge but typically you'll need 40 bytes of garbage to reach the saved return address in the x86_64 binaries, 44 bytes in the x86 binaries and around 36 bytes in the ARMv5 & MIPS binaries. 
 ```
                              **************************************************************
                              *                          FUNCTION                          *
