@@ -36,8 +36,8 @@ $ objdump -d chall
   4015df:       e8 1c fb ff ff          call   401100 <exit@plt>
 ...
 ```
-4.  Determine the distance to the target variable ~ 5 sets of 8 bytes = `40` bytes
-5.  Create the payload ~ 40 bytes of garbage to reach target variable then `0x004015c6` (address of `win`)
+3.  Determine the distance to the target variable ~ 5 sets of 8 bytes = `40` bytes
+4.  Create the payload ~ 40 bytes of garbage to reach target variable then `0x004015c6` (address of `win`)
 ```
 from pwn import *
 
