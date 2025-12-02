@@ -26,6 +26,7 @@ int main() {
 	}
 
 	printf("%d\n", count);
+	fclose(fp);
 	return EXIT_SUCCESS;
 
 }

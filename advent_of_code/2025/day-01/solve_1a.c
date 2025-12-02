@@ -19,6 +19,7 @@ int main() {
 		if (num == 0) count++; 
 	} 
 	
-	printf("%d\n", count); 
+	printf("%d\n", count);
+	fclose(fp); 
 	return EXIT_SUCCESS; 
 }
